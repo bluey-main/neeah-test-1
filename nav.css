@@ -1,0 +1,136 @@
+nav{
+    width: 100%;
+    height: auto;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    /* background-color:brown ; */
+}
+nav h3{
+    visibility: hidden;
+}
+nav .wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    /* background-color: cornflowerblue; */
+}
+
+nav h1{
+    margin: 0 30px 0 30px;
+    color: #a18167;
+    font-size: 30px;
+}
+
+nav ul li{
+    margin: 10px 10px 10px 10px;
+    padding: 5px;
+    list-style: none;
+    transition: linear 0.2s all;
+}
+
+nav ul li.active, nav ul li:hover{
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+}
+
+
+
+nav ul li a{
+    font-size: 15px;
+    margin: 10px ;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+}
+
+.checkbtn{
+    font-size: 30px;
+    background-color: transparent;
+    padding: 7px 13px;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 899px){
+    label.logo{
+        font-size: 25px;
+        padding-left: 20px;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+
+    div.wrapper{
+        position: fixed;
+        width: 80%;
+        height: 100%;
+        background: #dbc2ad;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 100;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    nav{
+        justify-content: space-between;
+    }
+
+    nav h3{
+        font-size: 30px;
+        margin-left: 10%;
+        visibility: visible;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        top: 0;
+    }
+
+    nav h1{
+        visibility: hidden;
+    }
+    nav ul li{
+        width: 50%;
+        margin: 20px 20px 20px 20px;
+        /* background-color:blueviolet; */
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        color: white;
+    }
+
+    a:hover, a.active{
+        background: none;
+        color: rgb(0, 158, 158);
+    }
+
+    #check:checked ~ div.wrapper{
+        left: 0;
+    }
+}

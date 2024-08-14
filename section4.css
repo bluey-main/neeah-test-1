@@ -1,0 +1,214 @@
+.section4{
+    width: 100%;
+    height: 200vh;
+    /* background-color: cadetblue; */
+}
+
+.section4 .header-text{
+    min-width: 100%;
+    height: 25%;
+    /* background-color:darksalmon; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.section4 .content-div{
+    width: 100%;
+    height: 70%;
+    /* background-color: darkslateblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+}
+
+.section4 .content-div .product-div{
+    width: 45%;
+    height: 100%;
+    /* background-color: firebrick; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section4 .content-div .product-div:last-child{
+    /* background-color: deeppink; */
+    flex-direction: column-reverse;
+}
+
+.section4 .content-div .product-div .head-product-card{
+    width: 100%;
+    height: 45%;
+    /* background-color: gold; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.head-product-card .head-product-card-text:hover + img{
+    transform: scale(1.2);
+}
+
+.head-product-card .head-product-card-text:hover{
+    transform: scale(1.1);
+}
+
+.head-product-card .head-product-card-text:hover > .main-textbox{
+    color: #efdccc;
+}
+
+.product-div .head-product-card img{
+    height: 100%;
+    transition: ease-in-out 0.5s;
+  
+
+}
+
+.product-div .head-product-card .head-product-card-text{
+    width: 100%;
+    height: 100%;
+    /* background-color: orangered; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 8;
+    transition: ease-in-out 0.5s;
+}
+
+.head-product-card-text .main-textbox{
+    width: 100%;
+    height: 50%;
+    /* background-color: deeppink; */
+    color: #efdccca1;
+    font-size: 2.5rem;
+    padding: 2rem;
+    transition: ease-in-out 0.5s;
+}
+
+.head-product-card-text .foot-textbox{
+    width: 100%;
+    height: 100px;
+    /* background-color: seagreen; */
+    padding: 2rem;
+}
+
+
+.section4 .content-div .product-div .product-card-div{
+    width: 100%;
+    height: 45%;
+    /* background-color:lime; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section4 .content-div .product-div .product-card-div .product-card{
+    width: 45%;
+    height: 100%;
+    /* background-color: darkorange; */
+    transition: ease-in-out 0.2s;
+}
+
+.section4 .content-div .product-div .product-card-div .product-card:hover{
+    margin-bottom: 20px;
+}
+
+.product-div .product-card .image-box{
+    width: 100%;
+    height: 75%;
+    /* background-color: chocolate; */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.product-card .image-box img{
+    width: 100%;
+}
+
+.product-div .product-card .card-title-box{
+    width: 100%;
+    height: 25%;
+    /* background-color: darksalmon; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+@media (max-width: 899px){
+    .section4{
+        width: 100%;
+        height: 600vh;
+        /* background-color: cadetblue; */
+        position: relative;
+    }
+
+    .section4 .header-text{
+        min-width: 100%;
+        height: 10%;
+        /* background-color:darksalmon; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1.5rem;
+    }
+    
+    .section4 .content-div{
+        width: 100%;
+        height: 90%;
+        /* background-color: darkslateblue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        position: relative;
+    }
+
+    .section4 .content-div .product-div{
+        width: 95%;
+        height: 45%;
+        /* background-color: firebrick; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .section4 .content-div .product-div .product-card-div{
+        width: 100%;
+        height: 45%;
+        /* background-color:lime; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section4 .content-div .product-div .product-card-div .product-card{
+        width: 90%;
+        height: 45%;
+        /* background-color: darkorange; */
+    }
+
+    
+}

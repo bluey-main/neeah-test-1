@@ -1,0 +1,313 @@
+.section2{
+    width: 100%;
+    height: 100vh;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.section2 .section2-div-container{
+    width: 80%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 1rem;
+
+}
+
+.section2-div-container .div1{
+    width:50%;
+    height: 70%;
+    /* background-color: darkred; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.section2-div-container .div1 img{
+    height: 100%;
+    transition: ease-in-out 0.5s;
+
+}
+
+.div1 .div1-textbox-container{
+    width: 100%;
+    height: 100%;
+    /* background-color: orangered; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 8;
+    transition: ease-in-out 0.5s;
+}
+
+.div1 .div1-textbox-container:hover + img{
+    transform: scale(1.2);
+}
+
+.div1 .div1-textbox-container:hover{
+    transform: scale(1.1);
+}
+
+.div1 .div1-textbox-container:hover > .div1-head-textbox{
+    color: #efdccc;
+}
+
+.div1-textbox-container .div1-head-textbox{
+    width: 100%;
+    height: 50%;
+    /* background-color: deeppink; */
+    color: #efdccca1;
+    font-size: 2.5rem;
+    padding: 2rem;
+    transition: ease-in-out 0.5s;
+}
+
+
+.div1-textbox-container .div1-foot-textbox{
+    width: 100%;
+    height: 100px;
+    /* background-color: seagreen; */
+    padding: 2rem;
+}
+
+.div1-textbox-container .div1-foot-textbox p{
+    font-size: 30px;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.829);
+}
+.section2-div-container .div2{
+    width:50%;
+    height: 70%;
+    /* background-color: midnightblue; */
+    position: relative;
+    
+  
+}
+
+.div2 .div2-subdiv-1{
+    width: 100%;
+    height: 50%;
+    /* background-color: mediumseagreen; */
+    display: flex;
+    position: relative;
+    gap: 1rem;
+}
+
+.div2-subdiv-1 .text-div{
+    width: 50%;
+    height: 100%;
+    background-color: #a18167;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    color: rgba(255, 255, 255, 0.712);
+}
+
+.div2-subdiv-1 .content-div{
+    width: 50%;
+    height: 100%;
+    /* background-color: coral; */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2-subdiv-1 .content-div img{
+    height: 100%;
+    z-index: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.div2-subdiv-1 .content-div .text-box{
+    position: absolute;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.726);
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: ease-in-out 0.5s;
+}
+
+.div2-subdiv-1 .content-div .text-box:hover{
+    color: #ffff;
+    transform: scale(1.1);
+}
+.div2-subdiv-1 .content-div .text-box:hover + img{
+    transform: scale(1.2);
+}
+
+.div2 .div2-subdiv-2{
+    width: 100%;
+    height: 47%;
+    /* background-color:mediumspringgreen; */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    
+}
+
+
+.div2-subdiv-2 img{
+    width: 100%;
+    z-index: 1;
+    transition: ease-in-out 0.5s;
+
+}
+
+.div2-subdiv-2 .text-div{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    transition: ease-in-out 0.5s;
+    color:rgba(0, 0, 0, 0.493);
+    z-index: 6;
+
+}
+
+.div2-subdiv-2 .text-div:hover{
+    color:black;
+    transform: scale(1.1);
+}
+
+.div2-subdiv-2 .text-div:hover + img{
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+
+@media (max-width: 899px){
+    .section2{
+        width: 100%;
+        height: 250vh;
+        /* background-color: tomato; */
+        flex-direction: column;
+    }
+
+    .section2 .section2-div-container{
+        width: 100%;
+        height: 100%;
+        /* background-color: aquamarine; */
+        flex-direction: column;
+    }
+
+    .section2-div-container .div1{
+        width:95%;
+        height: 30%;
+        margin-top: 1rem;
+    }
+
+    .div1-textbox-container .div1-head-textbox{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    /* .div1-textbox-container .div1-head-textbox{
+        width: 100%;
+        height: 50%;
+         background-color: deeppink; 
+        color: #efdccca1;
+        font-size: 2.5rem;
+        padding: 2rem;
+        transition: ease-in-out 0.5s;
+    }*/
+    .div1-textbox-container .div1-foot-textbox{ 
+        text-align: center;
+    }
+
+    .section2-div-container .div1 img{
+        height: 100%;
+    }
+
+    
+    .section2-div-container .div2{
+        width:95%;
+        height: 80%;
+        /* background-color: midnightblue; */
+        position: relative;
+        
+      
+    }
+
+    .div2 .div2-subdiv-1{
+        flex-direction: column;
+        /* background-color: mediumseagreen; */
+        height: 50%;
+    }
+
+    .div2-subdiv-1 .text-div{
+        width: 100%;
+    }
+
+    .div2-subdiv-1 .content-div{
+        width: 100%;
+        height: 100%;
+        /* background-color: coral; */
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .div2-subdiv-1 .content-div img{
+        height: 100%;
+        z-index: 1;
+        transition: ease-in-out 0.5s;
+    }
+    
+    .div2-subdiv-1 .content-div .text-box{
+        position: absolute;
+        font-size: 1.5rem;
+        color: rgba(255, 255, 255, 0.726);
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: ease-in-out 0.5s;
+    }
+
+    .div2 .div2-subdiv-2{
+        width: 100%;
+        height: 32%;
+        /* background-color:mediumspringgreen; */
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        
+    }
+
+    
+}
